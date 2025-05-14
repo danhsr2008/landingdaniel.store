@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .border-l-12 {
+    border-left-width: 12px;
+  }
+}
+
+@keyframes shine {
+  0% {
+    background-position: 200%;
+  }
+  100% {
+    background-position: -200%;
+  }
+}
+
+.shiny-text {
+  background: linear-gradient(
+    120deg,
+    #00defa 10%,
+    #ffffff 30%,
+    #00defa 60%
+  );
+  background-size: 200% auto;
+  color: #00defa; /* Fallback */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 2.5s linear infinite;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #2E2E2E;
+  background-color: #F5F7FA;
+  overflow-x: hidden;
+}
+
+@keyframes pulseFade {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.02);
+  }
+}
+
+.pulse-fade {
+  animation: pulseFade 2s ease-in-out infinite;
+}
+
+@keyframes pulse-down {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px); /* Movimenta para baixo com metade do valor */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-pulse-down {
+  animation: pulse-down 2s ease-in-out infinite; /* Diminui a velocidade, aumentando o tempo */
+}
