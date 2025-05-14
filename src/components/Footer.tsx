@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-[#00F0FF]">
               <img 
-                src="https://i.imgur.com/rHUFQbt.jpeg" 
+                src="https://i.imgur.com/AmeIR2n.jpeg" 
                 alt="Daniel Ribeiro" 
                 className="w-full h-full object-cover"
               />

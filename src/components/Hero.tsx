@@ -7,7 +7,7 @@ const Hero: React.FC = () => {
       className="relative flex flex-col justify-center min-h-screen bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage: "url('https://i.imgur.com/8JK5pi7.jpeg')",
-        backgroundAttachment: 'fixed',  // Efeito parallax
+        backgroundAttachment: 'fixed', // Efeito parallax
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
@@ -20,11 +20,11 @@ const Hero: React.FC = () => {
           <div className="flex flex-col md:flex-row items-center md:justify-between gap-4">
             {/* BLOCO DA FOTO + TEXTO */}
             <div className="flex flex-col items-center md:flex-row md:items-center gap-4">
-              {/* Foto */}
-              <div className="relative w-32 h-32 md:w-28 md:h-28 rounded-full overflow-hidden border-2 border-[#2563eb] shadow-md -mt-20 md:mt-0">
-                <img 
-                  src="https://i.imgur.com/rHUFQbt.jpeg" 
-                  alt="Daniel" 
+              {/* Foto sem borda e 35% menor */}
+              <div className="relative w-20 h-20 rounded-full overflow-hidden shadow-md -mt-20 md:mt-0">
+                <img
+                  src="https://i.imgur.com/AmeIR2n.jpeg"
+                  alt="Daniel"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -45,14 +45,15 @@ const Hero: React.FC = () => {
         {/* Conteúdo central */}
         <div className="container mx-auto px-4 py-8 text-center">
           <h1
-            className="text-gray-800 md:text-gray-700 text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-10 drop-shadow-lg"
+            className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-10 drop-shadow-lg text-[#e11d48]"
             data-aos="fade-up"
           >
-            Chega de parecer amador online.
+            <span className="pulse-fade inline-block">
+              Chega de parecer amador online.
+            </span>
             <span className="block mt-4 space-x-2">
-              <span className="text-[#2563eb] drop-shadow-md">Landing pages que geram</span>, 
-              <span className="text-[#22c55e] drop-shadow-md"> confiança</span> e 
-              <span className="text-gray-800 drop-shadow-md"> clientes de verdade.</span>
+              <span className="shiny-text">Landing pages que geram confiança</span>
+              <span className="text-gray-800 drop-shadow-md">e clientes de verdade.</span>
             </span>
           </h1>
 
@@ -63,7 +64,7 @@ const Hero: React.FC = () => {
             data-aos-delay="200"
           >
             Descubra agora
-            <ArrowDown className="ml-2 h-5 w-5" />
+            <ArrowDown className="ml-2 h-5 w-5 animate-pulse-down" />
           </a>
         </div>
       </div>

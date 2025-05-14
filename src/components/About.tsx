@@ -24,11 +24,11 @@ const About: React.FC = () => {
           </h2>
           
           <div 
-            className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-8 border-4 border-[#00F0FF]"
+            className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-8 border border-[#00F0FF]"
             data-aos="fade-up"
           >
             <img 
-              src="https://i.imgur.com/rHUFQbt.jpeg" 
+              src="https://i.imgur.com/AmeIR2n.jpeg" 
               alt="Daniel" 
               className="w-full h-full object-cover"
             />
